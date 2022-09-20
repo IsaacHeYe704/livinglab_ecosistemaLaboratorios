@@ -21,7 +21,7 @@
     content: " ";
     background-color: #192A67;
     width: 1px;
-    height: 200px;
+    height: 270px;
 }
 .RightHomeContent{
     display: flex;
@@ -39,6 +39,14 @@
    border-left: 20px;
    margin-left: 30px;
 }
+.RightHomeContent_right_listContainer>*{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px;
+    min-height: 70px;
+}
+
 .RightHeader_numberSubtitle{
     font-size: 3em;
     color: var(--main-title-color);
@@ -48,10 +56,29 @@
 .RightHeader_numberSubtitle {
     vertical-align:top;
     position: relative;
+    margin: 0px;
 }
 .bullet{
-    display: inline;
     background-color: #192A67;
-    width: 100px;
-    height: 100px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.bullet > *{
+    background-color: #192A67;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 2px solid white ;
+}
+.RightHeader_text{
+    font-family: var(--main-text-font);
+    color: var(--main-text-color);
+    font-size: 25px;
+    width: 15ch;
+    margin: 0px;
 }

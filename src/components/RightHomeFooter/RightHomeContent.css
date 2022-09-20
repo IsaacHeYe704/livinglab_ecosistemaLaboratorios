@@ -1,0 +1,24 @@
+.RightHomeFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.RightHomeFooter_subcontainer{
+    display: flex;
+    gap:20px;
+    align-items: center; 
+    
+}
+.RightHomeFooter_text{
+    font-size: 22px;
+}
+.RightFooter_numberSubtitle{
+    font-size: 2em;
+    color: var(--main-title-color);
+    font-family: var(--main-text-font);
+    font-weight: 700;
+    margin: 0px;
+}
