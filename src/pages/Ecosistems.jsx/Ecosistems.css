@@ -1,0 +1,39 @@
+.Ecosistems{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+}
+.Ecosistems::after{
+    position: absolute;
+    left: -10%;
+    top: 30%;
+    z-index: -1;
+    content: " ";
+    background-color: var(--secundary-bg-color);
+    width: 50%;
+    height: 100%;
+    
+    border-radius: 100%;
+}
+.row{
+    display: flex;
+    height: 150px;
+
+}
+
+.one,.four{
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.two,.three{
+    justify-content: space-around;
+}
+.center{
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

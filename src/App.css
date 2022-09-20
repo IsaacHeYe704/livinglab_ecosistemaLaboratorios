@@ -8,5 +8,9 @@
 }
 .App > *{
   flex: 1;
-  border: 2px solid;
+}
+.App-leftSide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

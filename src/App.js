@@ -1,19 +1,14 @@
 import "./App.css"
-import RightHeader from "./components/RightHeader/RightHeader";
-import RightHomeContent from "./components/RightHomeContent/RightHomeContent";
-import RightHomeFooter from "./components/RightHomeFooter/RightHomeFooter";
-import Title from "./components/Title/Title";
-
+import Ecosistems from "./pages/Ecosistems.jsx/Ecosistems";
+import Home from "./pages/Home.jsx"
 function App() {
   return (
     <div className="App">
-      <div className="App-rightSide"> 
-asdasd
+      <div className="App-leftSide">  
+      <Ecosistems/>
       </div>
-      <div className="App-leftSide"> 
-        <RightHeader/>
-        <RightHomeContent/>
-        <RightHomeFooter/>
+      <div className="App-rightSide"> 
+        <Home/>
       </div>
     </div>
   );
