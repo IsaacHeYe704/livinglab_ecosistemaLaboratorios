@@ -1,17 +1,31 @@
 import React from "react";
 import "./Bola.css";
 import Xarrow from "react-xarrows";
+import { Link, useNavigate} from "react-router-dom";
 const Bola = ({ color, text, center, id, selectedLab, setSelectedLab }) => {
+  const navigate = useNavigate()
   const textColor = (center) => {
     if (center) {
       return "#192A67";
     }
     return "white";
   };
+  const selectThisBola =()=>{ 
+    setSelectedLab(text)
+    if (text != 'Laboratorios')
+    {
+      navigate('/lab/'+text);
+    }
+    else{
+      navigate('/');
+    }
+   
+
+  }
   return (
     <>
       <div
-        onClick={() => setSelectedLab(text)}
+        onClick={selectThisBola}
         className={`Bola ${
           selectedLab == text
             ? "Bola_selected"
