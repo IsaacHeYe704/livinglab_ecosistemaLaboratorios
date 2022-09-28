@@ -16,7 +16,7 @@ const Bola = ({color,text, center,id}) => {
                 color={'gray'}
                 headSize={0}
                 curveness={0}
-                strokeWidth={15}
+                strokeWidth={10}
                 animateDrawing={true}
                 dashness={Math.random()>0.6?true:false}
             />

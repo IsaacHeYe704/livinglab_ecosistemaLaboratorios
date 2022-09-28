@@ -1,89 +1,97 @@
-:root{
-    --Bola-size: 170px;
+:root {
+  --Bola-size: 170px;
+  --Bola--desktop-size: 120px;
 }
-.Bola{
-    width: var(--Bola-size);
-    height: var(--Bola-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    -webkit-animation: breathing 5s ease-out infinite normal;
-    animation: breathing 5s ease-out infinite normal;
-    position: relative;
-    z-index: 100;
-    
+.Bola {
+  width: var(--Bola-size);
+  height: var(--Bola-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  -webkit-animation: breathing 5s ease-out infinite normal;
+  animation: breathing 5s ease-out infinite normal;
+  position: relative;
+  z-index: 100;
 }
-.Bola-Content{
 
-    border: 5px solid white;
-    width: 80%;
-    height: 80%;
-    border-radius: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
+.Bola-Content {
+  border: 5px solid white;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.Bola-Content > *{
-    text-align: center;
-    font-weight: 700;
-    font-family: var(--main-text-font);
+.Bola-Content > * {
+  text-align: center;
+  font-weight: 700;
+  font-family: var(--main-text-font);
 }
-.Bola:hover{
-    scale: 1.4;
+.Bola:hover {
+  scale: 1.4;
 }
 @-webkit-keyframes breathing {
-    0% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-      transform: translateX(200px);
-    }
-  
-    25% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      transform: translateX(200px);
-    }
-  
-    60% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-      transform: translateX(200px);
-    }
-  
-    100% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-      transform: translateX(200px);
-    }
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transform: translateX(200px);
   }
-  
-  @keyframes breathing {
-    0% {
-      -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-      transform: scale(0.9);
 
-    }
-  
-    25% {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-    }
-  
-    60% {
-      -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-  
-    100% {
-      -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-      transform: scale(0.9);
-    }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transform: translateX(200px);
   }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transform: translateX(200px);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transform: translateX(200px);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 1500px) {
+  .Bola {
+    width: var(--Bola--desktop-size);
+    height: var(--Bola--desktop-size);
+  }
+  .Bola:hover {
+    scale: 1.2;
+    cursor: pointer;
+  }
+}

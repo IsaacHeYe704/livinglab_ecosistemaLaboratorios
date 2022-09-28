@@ -10,7 +10,7 @@ const RightHeader = () => {
       <Title text="CAPACIDAD INSTALADA DEL SISTEMA DEL LABORATORIO " />
       </div>
       
-      <h3 className="RightHeader_subtitlte">Laboratorios para la innovación y el aprendizaje</h3>
+      <h3 className="RightHeader_subtitlte">Laboratorios para la innovación, investigación y el aprendizaje</h3>
     </div>
   );
 };

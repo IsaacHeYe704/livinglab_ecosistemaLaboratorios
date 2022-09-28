@@ -1,4 +1,5 @@
 .Ecosistems{
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -23,17 +24,34 @@
 }
 
 .one,.four{
+    border: 1px solid blue;
     gap: 60px;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
 .two,.three{
+    border: 1px solid red;
     justify-content: space-around;
+    height: auto;
 }
 .center{
+    border: 1px solid green;
     align-items: center;
     justify-content: space-evenly;
     gap: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    height: auto;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
 }
+
+@media (max-width: 1500px) {
+    .Bola {
+      width: var(--Bola--desktop-size);
+      height: var(--Bola--desktop-size);
+    }
+    .Bola:hover {
+      scale: 1.2;
+      cursor: pointer;
+    }
+  }

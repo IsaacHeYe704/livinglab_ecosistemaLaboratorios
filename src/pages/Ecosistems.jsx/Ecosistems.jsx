@@ -2,6 +2,7 @@ import React from 'react'
 import Bola from '../../components/Bola/Bola'
 import "./Ecosistems.css"
 
+
 const Ecosistems = () => {
   return (
     <div className='Ecosistems'>

@@ -2,7 +2,7 @@
 .App {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: row;
   overflow-x: hidden;
 }
@@ -10,7 +10,19 @@
   flex: 1;
 }
 .App-leftSide{
+  /* border: 1px solid red; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap:3vh;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: baseline;
+  flex-direction: column;
+}
+
+.App-logo{
+  /* border: 1px solid blue; */
+  width: 22vw;
+  margin-left: 3vw;
+  margin-top: 3.5vh;
+  /* align-self: center; */
 }
