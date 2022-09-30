@@ -24,19 +24,16 @@
 }
 
 .one,.four{
-    border: 1px solid blue;
     gap: 60px;
     align-items: center;
     justify-content: center;
     height: auto;
 }
 .two,.three{
-    border: 1px solid red;
     justify-content: space-around;
     height: auto;
 }
 .center{
-    border: 1px solid green;
     align-items: center;
     justify-content: space-evenly;
     gap: 100px;

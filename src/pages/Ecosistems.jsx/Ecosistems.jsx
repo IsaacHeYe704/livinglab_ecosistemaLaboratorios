@@ -41,7 +41,7 @@ const info =[
         text:"Comunicación"
     },{
         color:"#734390",
-        text:"Psciología"
+        text:"Psicología"
     },
     {
         color:"white", text:"Laboratorios", center:"true"
