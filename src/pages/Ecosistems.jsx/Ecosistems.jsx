@@ -1,25 +1,28 @@
 import React from 'react'
+import { useEffect } from 'react'
+import { useState } from 'react'
 import Bola from '../../components/Bola/Bola'
 import "./Ecosistems.css"
 
 
 const Ecosistems = () => {
+  const [selectedLab, setSelectedLab] = useState("Laboratorios"); 
   return (
     <div className='Ecosistems'>
         <div className="row one">
-            {info.slice(0,2).map(({color,text},id)=><Bola color={color} id={"one"+id}  text={text} />)}
+            {info.slice(0,2).map(({color,text},id)=><Bola color={color} id={"one"+id}  text={text} selectedLab={selectedLab}  setSelectedLab = {setSelectedLab} />)}
         </div>
         <div className="row two">
-            {info.slice(2,4).map(({color,text},id)=><Bola color={color} id={"two"+id}  text={text} />)}
+            {info.slice(2,4).map(({color,text},id)=><Bola color={color} id={"two"+id}  text={text} selectedLab={selectedLab}  setSelectedLab = {setSelectedLab} />)}
         </div>
         <div  className="row center">
-        {info.slice(4,7).map(({color,text,center},id)=><Bola color={color} text={text} id={"center"+id}  center={center}/>)}
+        {info.slice(4,7).map(({color,text,center},id)=><Bola color={color} text={text} id={"center"+id}  center={center} selectedLab={selectedLab}  setSelectedLab = {setSelectedLab}/>)}
         </div>
         <div className="row three">
-            {info.slice(7,9).map(({color,text},id)=><Bola color={color} id={"three"+id} text={text} />)}
+            {info.slice(7,9).map(({color,text},id)=><Bola color={color} id={"three"+id} text={text} selectedLab={selectedLab}  setSelectedLab = {setSelectedLab} />)}
         </div>
         <div className="row four">
-            {info.slice(9,11).map(({color,text},id)=><Bola color={color} id={"four"+id} text={text} />)}
+            {info.slice(9,11).map(({color,text},id)=><Bola color={color} id={"four"+id} text={text} selectedLab={selectedLab}  setSelectedLab = {setSelectedLab} />)}
         </div>
     </div>
   )

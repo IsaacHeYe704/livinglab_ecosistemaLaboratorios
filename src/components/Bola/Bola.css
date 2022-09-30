@@ -31,8 +31,21 @@
   font-weight: 700;
   font-family: var(--main-text-font);
 }
-.Bola:hover {
-  scale: 1.4;
+.Bola_selected{
+    scale: 1.4;
+    animation: none;
+    z-index: 1000;
+}
+.Bola_notSelected{
+  scale: 0.8;
+  opacity: 0.88;
+}
+.Bola_notSelected > *{
+  opacity: 0.8;
+  color: black !important;
+}
+.Bola-center{
+  background-color: transparent !important;
 }
 @-webkit-keyframes breathing {
   0% {
