@@ -37,7 +37,7 @@
     z-index: 1000;
 }
 .Bola_notSelected{
-  scale: 0.8;
+  
   opacity: 0.88;
 }
 .Bola_notSelected > *{

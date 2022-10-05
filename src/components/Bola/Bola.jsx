@@ -22,6 +22,12 @@ const Bola = ({ color, text, center, id, selectedLab, setSelectedLab }) => {
    
 
   }
+  const getBackground= ()=>{
+    if (center) {
+      return "grey"
+    }
+    return color
+  }
   return (
     <>
       <div
@@ -34,7 +40,7 @@ const Bola = ({ color, text, center, id, selectedLab, setSelectedLab }) => {
             : null
         }`}
         style={{
-          backgroundColor: color,
+          backgroundColor: getBackground(),
           animationDelay: Math.random() * 2 + "s",
           top: Math.random() * 50 + "px",
           left: Math.random() * 50 + "px",
