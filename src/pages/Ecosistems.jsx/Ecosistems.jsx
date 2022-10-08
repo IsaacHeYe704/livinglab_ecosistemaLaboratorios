@@ -35,7 +35,7 @@ const info =[
         color:"#922B43", 
         text:"Centro de lenguas extranjeras"
     },{
-        color:"#F19500",text:"EICEA"
+        color:"#F19500",text:"Escuela"
     },{
         color:"#818990",
         text:"Comunicación"
@@ -44,10 +44,10 @@ const info =[
         text:"Psicología"
     },
     {
-        color:"white", text:"Laboratorios", center:"true"
+        color:"white", text:"Laboratorios por Facultad", center:"true"
     },{
         color:"#C7211D",
-        text:"Consultorio Jurídico"
+        text:"Derecho y Ciencias Políticas"
     },{
         color:"#FFD71C",
         text:"Medicina"

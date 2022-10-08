@@ -4,6 +4,7 @@ import LabDetailTopBar from "../../components/LabDetailTopBar/LabDetailTopBar";
 import "./LabDetail.css"
 import getFaculty from "../../helpers/facultyHelper"
 import LabDetailCard from "../../components/LabDetailCard/LabDetailCard.jsx"
+import Lab from "../../components/Lab/Lab";
 const LabDetail = () => {
   let { labName } = useParams();
   const [color, setcolor] = useState("");
@@ -25,18 +26,13 @@ const LabDetail = () => {
       </h2>
       <LabDetailTopBar  getName={getName} color={color}  />
       <div className="LabDetail_scroll">
-        <LabDetailCard   color={color}  />
-        <LabDetailCard   color={color}  />
-
-        <LabDetailCard   color={color}  />
-
-        <LabDetailCard   color={color}  />
-
-        <LabDetailCard   color={color}  />
+        <Lab   color={color}  />
+        <Lab   color={color}  />
+        <Lab   color={color}  />
+        <Lab   color={color}  />
 
       </div>
     </div>
   );
 };
-
 export default LabDetail;

@@ -12,7 +12,7 @@ const Bola = ({ color, text, center, id, selectedLab, setSelectedLab }) => {
   };
   const selectThisBola =()=>{ 
     setSelectedLab(text)
-    if (text != 'Laboratorios')
+    if (text != 'Laboratorios por Facultad')
     {
       navigate('/lab/'+text);
     }

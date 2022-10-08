@@ -1,5 +1,5 @@
 :root {
-  --Bola-size: 170px;
+  --Bola-size: 155px;
   --Bola--desktop-size: 120px;
 }
 .Bola {
@@ -32,13 +32,13 @@
   font-family: var(--main-text-font);
 }
 .Bola_selected{
-    scale: 1.4;
+    scale: 1.2;
     animation: none;
     z-index: 1000;
 }
 .Bola_notSelected{
   
-  opacity: 0.88;
+  opacity: 0.9;
 }
 .Bola_notSelected > *{
   opacity: 0.8;

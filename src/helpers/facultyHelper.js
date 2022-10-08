@@ -36,11 +36,11 @@ const info =[
 const dictionary={
     "Living Lab":"#192A67",
     "Centro de lenguas extranjeras":"#922B43",
-    "EICEA":"#F19500",
+    "Escuela":"#F19500",
     "Comunicación":"#818990",
     "Psicología":"#734390",
     "Laboratorios":"white",
-    "Consultorio Jurídico":"#C7211D",
+    "Derecho y Ciencias Políticas":"#C7211D",
     "Medicina":"#FFD71C",
     "Ingeniería":"#936D47",
     "Enfermería Fisioterapia":"#C6C6C6",
