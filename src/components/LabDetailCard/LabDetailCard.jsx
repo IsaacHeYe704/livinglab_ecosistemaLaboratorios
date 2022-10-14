@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import LabCompleteDetail from "../LabCompleteDetail/LabCompleteDetail";
 import "./LabDetailCard.css";
-function LabDetailCard({ color, setshowDetails}) {
+function LabDetailCard({ color, setshowDetails,info}) {
   return (
     <>
       <div className="labDetail__container">
@@ -13,10 +13,9 @@ function LabDetailCard({ color, setshowDetails}) {
           ></div>
           <p className="LabDetail__headeType">Laboratorio</p>
         </div>
-        <h3 className="LabDetail__name">Bloomberg</h3>
+        <h3 className="LabDetail__name">{info.nombre}</h3>
         <p className="LabDetail__description">
-          El almacén de Programa de Gastronomía es un espacio donde se centra la
-          recepción, almacena...
+          {info.descripcion_laboratorio}
         </p>
         <div className="LabDetail__footer">
           <div className="LabDetail__statsContainer">
@@ -37,7 +36,7 @@ function LabDetailCard({ color, setshowDetails}) {
                 />
               </svg>
 
-              <span className="LabDetail__statText">AD Portas </span>
+              <span className="LabDetail__statText">{info.ubicacion} </span>
             </div>
             <div className="LabDetail__stat">
               <svg
@@ -61,7 +60,7 @@ function LabDetailCard({ color, setshowDetails}) {
                 />
               </svg>
 
-              <span className="LabDetail__statText">AD Portas </span>
+              <span className="LabDetail__statText">{info.area} mtr2</span>
             </div>
             <div className="LabDetail__stat">
               <svg
@@ -100,7 +99,7 @@ function LabDetailCard({ color, setshowDetails}) {
                   fill="#130F26"
                 />
               </svg>
-              <span className="LabDetail__statText">AD Portas </span>
+              <span className="LabDetail__statText">{info.capacidad_maxima_personas} </span>
             </div>
           </div>
           <p className="LabDetail__viewMore" onClick={()=> setshowDetails(true)}>

@@ -4,7 +4,7 @@ import { useTransition ,animated} from "react-spring";
 import LabCompleteDetail from "../LabCompleteDetail/LabCompleteDetail";
 import LabDetailCard from "../LabDetailCard/LabDetailCard";
 
-const Lab = ({ color }) => {
+const Lab = ({ color, info }) => {
   const [showDetails, setshowDetails] = useState(false);
   const transition = useTransition(showDetails, {
     from: {
@@ -26,12 +26,12 @@ const Lab = ({ color }) => {
         transition((style, item) => (
           item?
           <animated.div style={style}>
-            <LabCompleteDetail color={color} setshowDetails={setshowDetails} />
+            <LabCompleteDetail color={color} info={info} setshowDetails={setshowDetails} />
           </animated.div>:
           ''
         ))
       ) : (
-        <LabDetailCard color={color} setshowDetails={setshowDetails} />
+        <LabDetailCard color={color} info={info} setshowDetails={setshowDetails} />
       )}
     </>
   );

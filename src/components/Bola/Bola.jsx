@@ -64,7 +64,7 @@ const Bola = ({ color, text, center, id, selectedLab, setSelectedLab }) => {
       </div>
       <Xarrow
         start={id} //can be react ref
-        end="center1" //or an id
+        end="center-1" //or an id
         color={"gray"}
         headSize={0}
         curveness={0}

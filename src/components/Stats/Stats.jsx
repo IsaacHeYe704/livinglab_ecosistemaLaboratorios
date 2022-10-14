@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Stats = ({column}) => {
+const Stats = ({column,info}) => {
   return (
     <div className="LabDetail__statsContainer" style={{width: column? "400px":null  }}>
       <div className="LabDetail__stat">
@@ -20,7 +20,7 @@ const Stats = ({column}) => {
           />
         </svg>
 
-        <span className="LabDetail__statText">AD Portas </span>
+        <span className="LabDetail__statText">{info.ubicacion} </span>
       </div>
       <div className="LabDetail__stat">
         <svg
@@ -44,7 +44,7 @@ const Stats = ({column}) => {
           />
         </svg>
 
-        <span className="LabDetail__statText">AD Portas </span>
+        <span className="LabDetail__statText">{info.area} mtr2 </span>
       </div>
       <div className="LabDetail__stat">
         <svg
@@ -83,7 +83,7 @@ const Stats = ({column}) => {
             fill="#130F26"
           />
         </svg>
-        <span className="LabDetail__statText">AD Portas </span>
+        <span className="LabDetail__statText">{info.capacidad_maxima_personas} </span>
       </div>
     </div>
   )
