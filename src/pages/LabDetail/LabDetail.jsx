@@ -16,7 +16,6 @@ const LabDetail = ({ faculties }) => {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setlabs(data);
       });
   }, [labName, faculties]);
@@ -34,7 +33,7 @@ const LabDetail = ({ faculties }) => {
     return labName;
   };
   useEffect(() => {
-    setcolor(getFaculty(labName));
+    setcolor(getFaculty(labName,faculties));
   }, [labName]);
   getName();
   return (

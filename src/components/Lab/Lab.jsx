@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { useTransition ,animated} from "react-spring";
 import LabCompleteDetail from "../LabCompleteDetail/LabCompleteDetail";
@@ -20,6 +21,8 @@ const Lab = ({ color, info }) => {
       duration: 400
     },
   });
+
+  
   return (
     <>
       {showDetails ? (

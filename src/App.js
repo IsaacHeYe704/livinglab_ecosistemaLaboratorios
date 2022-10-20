@@ -14,14 +14,12 @@ function App() {
   .then(response => response.json())
   .then(data => {
     let aux = [...data]
-    console.log(aux);
     aux.splice(5,0,{
       id:-1,
       color: "white",
       nombre: "Laboratorios por Facultad",
       center: true,
     })
-    console.log(aux)
     setfaculties(aux)});
   }, []);
   return (
@@ -29,7 +27,6 @@ function App() {
       <div className="App-leftSide">
         <img className="App-logo" src={unisabanaLogo} />
         <Ecosistems faculties={faculties} />
-        <BottomLeftMenu/>
       </div>
       <div className="App-rightSide">
         <Routes>

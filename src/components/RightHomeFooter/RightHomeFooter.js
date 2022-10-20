@@ -11,6 +11,10 @@ const RightHomeFooter = () => {
         <p className="RightFooter_numberSubtitle"> (+) 22 </p>
         <p className="RightHomeFooter_text">Mil millones en equipos</p>
       </div>
+      <div className="RightHomeFooter_subcontainer">
+        <p className="RightFooter_numberSubtitle"> (+) 4.8 </p>
+        <p className="RightHomeFooter_text">Mil metros cuadrados</p>
+      </div>
     </div>
   );
 };
