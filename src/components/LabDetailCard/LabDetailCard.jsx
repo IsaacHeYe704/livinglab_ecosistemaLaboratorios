@@ -15,7 +15,7 @@ function LabDetailCard({ color, setshowDetails,info}) {
         </div>
         <h3 className="LabDetail__name">{info.nombre}</h3>
         <p className="LabDetail__description">
-          {info.descripcion_laboratorio}
+          {info.descripcion_laboratorio !== 'nan' ? info.descripcion_laboratorio: ''}
         </p>
         <div className="LabDetail__footer">
           <div className="LabDetail__statsContainer">
