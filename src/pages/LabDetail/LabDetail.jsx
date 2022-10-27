@@ -7,6 +7,7 @@ import LabDetailCard from "../../components/LabDetailCard/LabDetailCard.jsx";
 import Lab from "../../components/Lab/Lab";
 const LabDetail = ({ faculties }) => {
   const [labs, setlabs] = useState([]);
+  const [faculty, setfaculty] = useState({})
   let { labName } = useParams();
   useEffect(() => {
     let name = faculties.find((x) => x.nombre === labName);
@@ -33,7 +34,9 @@ const LabDetail = ({ faculties }) => {
     return labName;
   };
   useEffect(() => {
-    setcolor(getFaculty(labName,faculties));
+
+    setfaculty(getFaculty(labName,faculties));
+    setcolor(faculty.color);
   }, [labName]);
   getName();
   return (
@@ -41,7 +44,7 @@ const LabDetail = ({ faculties }) => {
       <h2 className="LabDetail__title">
         CAPACIDAD INSTALADA DEL ECOSISTEMA DEL LABORATORIO
       </h2>
-      <LabDetailTopBar getName={getName} color={color} />
+      <LabDetailTopBar getName={getName} info={faculty} color={color} />
       <div className="LabDetail_scroll">
         {labs.map((lab) => (
           <Lab info={lab} color={color} />

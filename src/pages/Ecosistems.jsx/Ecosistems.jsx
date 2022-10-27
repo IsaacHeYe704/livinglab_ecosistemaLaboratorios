@@ -5,7 +5,6 @@ import Bola from "../../components/Bola/Bola";
 import "./Ecosistems.css";
 
 const Ecosistems = ({ faculties }) => {
-  console.log(faculties)
   const [selectedLab, setSelectedLab] = useState("Laboratorios");
   return (
     <div className="Ecosistems">
